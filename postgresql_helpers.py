@@ -34,6 +34,8 @@ def create_postgresql_upsertion_queries(
             
             query = f"{query[:-2]}), "
         
+        query = query[:-2]
+        
         if formatted:
             query += "\n"
         
